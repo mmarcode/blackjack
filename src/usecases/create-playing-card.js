@@ -10,7 +10,7 @@ export const createPlayingCard = ( gameCards, card, turn ) => {
 		throw new Error('the parameter [card] is mandatory { String }');
 
 	const imgCard = document.createElement( 'img' );
-	imgCard.src = `../assets/img/${ card }.png`;
+	imgCard.src = `/blackjack/assets/img/${ card }.png`;
 	imgCard.classList.add( 'game-card' );
 	gameCards[turn].append( imgCard );
 }
